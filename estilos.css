@@ -1,0 +1,22 @@
+h2{
+    display:flex;
+    justify-content: center;
+    padding:100px;
+}
+.container-fluid{
+    padding-left: 100px;
+}
+
+.card{
+    margin-bottom: 100px;
+    padding-top: 20px;
+
+}
+
+#carrito{
+    margin: 50px;
+}
+
+.noVisible{
+    display: none;
+}
