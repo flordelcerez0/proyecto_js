@@ -1,3 +1,26 @@
+.fondo-nav{
+    background-color: #1e741e;
+    color: white;
+}
+.logo{
+    font-family: 'Unica One', cursive;
+    font-size: 30px;
+}
+.nav-link{
+    font-family: 'Montserrat', sans-serif;
+}
+.jumbotron{
+    background-image: url(https://images.pexels.com/photos/7658822/pexels-photo-7658822.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-position: center;
+    height:550px;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 110px;
+}
+.jumbotron h1{
+    font-size: 45px;
+}
 h2{
     display:flex;
     justify-content: center;
@@ -11,6 +34,10 @@ h2{
     margin-bottom: 100px;
     padding-top: 20px;
 
+}
+
+.oculto{
+    display:none;
 }
 
 #carrito{
