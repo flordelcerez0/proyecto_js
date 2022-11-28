@@ -1,47 +1,11 @@
-let productos = [{
-        nombre: "Planta de Tomate Grande",
-        id: 44,
-        categoria: "plantas",
-        precio: 500,
-        stock: 10,
-        imgUrl: "../img/tomate1.webp"
-    },
-    {
-        nombre: "Planta de Tomate Chica",
-        id: 45,
-        categoria: "plantas",
-        precio: 500,
-        stock: 10,
-        imgUrl: "../img/tomate2.jpeg"
-    },
-    {
-        nombre: "Maceta Cuadrada",
-        id: 46,
-        categoria: "macetas",
-        precio: 500,
-        stock: 10,
-        imgUrl: "../img/macetacuadrada.jpeg"
-    },
-    {
-        nombre: "Maceta Rectangular",
-        id: 47,
-        categoria: "macetas",
-        precio: 800,
-        stock: 10,
-        imgUrl: "../img/macetarectangular.jpeg"
-    },
-    {
-        nombre: "Maceta Lata",
-        id: 48,
-        categoria: "macetas",
-        precio: 400,
-        stock: 10,
-        imgUrl: "../img/macetalata.jpeg"
-    }
-]
+
+let carritoGuardado = JSON.parse(localStorage.getItem('carrito')) || []
 
 let contenedorProductos = document.getElementById("contenedorProductos")
-renderizarProductos()
+
+fetch('./productos.json')
+    .then(response => response.json())
+    .then(arrayDeProductos => renderizarProductos(arrayDeProductos))
 
 
 let botonPlantas = document.getElementById('btnPlantas')
@@ -94,24 +58,24 @@ function renderizarProductos(productosFiltrados) {
         carritoGuardado = JSON.parse(localStorage.getItem('carrito'))
     }*/
 
-    let carritoGuardado = JSON.parse(localStorage.getItem('carrito')) || []
 
-    for (const item of carritoGuardado) {
+
+    /*for (const item of carritoGuardado) {
         let productoBuscado = productos.find(producto => producto.id == item.id)
         carrito.innerHTML += `
         <p>${productoBuscado.nombre}</p>
         <p>$${productoBuscado.precio}</p>
         `
-    }
+    }*/
 
 
     for (const boton of botones) {
         boton.onclick = (e) => {
             let productoBuscado = productos.find(producto => producto.id == e.target.id)
-            carrito.innerHTML += `
+            /*carrito.innerHTML += `
         <p>${productoBuscado.nombre}</p>
         <p>$${productoBuscado.precio}</p>
-        `
+        `*/
             carritoGuardado.push({
                 id: productoBuscado.id,
                 nombre: productoBuscado.nombre,
@@ -130,19 +94,21 @@ function renderizarProductos(productosFiltrados) {
 
 const verCarrito = document.getElementById("verCarrito")
 verCarrito.onclick = () => {
-    carrito.classList.toggle("oculto")
-    const Toast = Swal.mixin({
-        toast: true,
-        position: 'top-end',
-        showConfirmButton: false,
-        didOpen: (toast) => {
-          toast.addEventListener('mouseenter', Swal.stopTimer)
-          toast.addEventListener('mouseleave', Swal.resumeTimer)
-        }
-      })
-      
-      Toast.fire({
-        title: 'Carrito',
-        text: 'Este es el carrito'
-      })
+    for (const item of carritoGuardado) {
+        let productoBuscado = productos.find(producto => producto.id == item.id)
+        //carrito.classList.toggle("oculto")
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            didOpen: (toast) => {
+                toast.addEventListener('mouseenter', Swal.stopTimer)
+                toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+        })
+        Toast.fire({
+            title: 'Carrito',
+            text: `${productoBuscado.nombre} $${productoBuscado.precio}`
+        })
+    }
 }

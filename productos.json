@@ -1,0 +1,7 @@
+[
+    { "nombre": "Planta de Tomate Grande", "id": 44, "categoria": "plantas", "precio": 500, "stock": 10, "imgUrl": "../img/tomate1.webp" },
+    { "nombre": "Planta de Tomate Chica", "id": 45, "categoria": "plantas", "precio": 500, "stock": 10, "imgUrl": "../img/tomate2.jpeg" },
+    { "nombre": "Maceta Cuadrada", "id": 46, "categoria": "macetas", "precio": 500, "stock": 10, "imgUrl": "../img/macetacuadrada.jpeg" },
+    { "nombre": "Maceta Rectangular", "id": 47, "categoria": "macetas", "precio": 800, "stock": 10, "imgUrl": "../img/macetarectangular.jpeg" },
+    { "nombre": "Maceta Lata", "id": 48, "categoria": "macetas", "precio": 400, "stock": 10, "imgUrl": "../img/macetalata.jpeg" }
+]
