@@ -17,6 +17,7 @@
     color:white;
     font-family: 'Montserrat', sans-serif;
     padding-top: 110px;
+    margin:0;
 }
 .jumbotron h1{
     font-size: 45px;
@@ -24,10 +25,21 @@
 h2{
     display:flex;
     justify-content: center;
-    padding:100px;
+    padding:50px;
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1e741e;
+    color:white;
+}
+.categorias{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding: 15px;
 }
 .container-fluid{
-    padding-left: 100px;
+    padding-left: 300px;
 }
 
 .card{
@@ -46,4 +58,22 @@ h2{
 
 .noVisible{
     display: none;
+}
+
+.footer{
+    min-height: 100px;
+    width: 100%;
+    padding: 50px;
+    background-color: #1e741e;
+    color:white;
+    text-align: center;
+}
+
+.footer p{
+    font-size: 14px;
+}
+
+.footer i{
+    font-size: 30px;
+    letter-spacing: 20px;
 }

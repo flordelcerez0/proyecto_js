@@ -6,10 +6,10 @@ fetch('./productos.json')
     .then(arrayDeProductos => renderizarProductos(arrayDeProductos))
 
 
-let botonPlantas = document.getElementById('btnPlantas')
+/*let botonPlantas = document.getElementById('btnPlantas')
 let botonMacetas = document.getElementById('btnMacetas')
 
-botonPlantas.onclick = () => {
+/*botonPlantas.onclick = () => {
     let productosFiltrados = productos.filter(producto => producto.categoria === "plantas")
     renderizarProductos(productosFiltrados)
 }
@@ -17,7 +17,9 @@ botonPlantas.onclick = () => {
 botonMacetas.onclick = () => {
     let productosFiltrados = productos.filter(producto => producto.categoria === "macetas")
     renderizarProductos(productosFiltrados)
-}
+}*/
+
+
 
 function renderizarProductos(productosFiltrados) {
     contenedorProductos.innerHTML = ''

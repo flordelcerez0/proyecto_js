@@ -1,7 +1,7 @@
 [
-    { "nombre": "Planta de Tomate Grande", "id": 44, "categoria": "plantas", "precio": 500, "stock": 10, "imgUrl": "../img/tomate1.webp" },
-    { "nombre": "Planta de Tomate Chica", "id": 45, "categoria": "plantas", "precio": 500, "stock": 10, "imgUrl": "../img/tomate2.jpeg" },
-    { "nombre": "Maceta Cuadrada", "id": 46, "categoria": "macetas", "precio": 500, "stock": 10, "imgUrl": "../img/macetacuadrada.jpeg" },
-    { "nombre": "Maceta Rectangular", "id": 47, "categoria": "macetas", "precio": 800, "stock": 10, "imgUrl": "../img/macetarectangular.jpeg" },
-    { "nombre": "Maceta Lata", "id": 48, "categoria": "macetas", "precio": 400, "stock": 10, "imgUrl": "../img/macetalata.jpeg" }
+    { "nombre": "Planta de Tomate Grande", "id": 44, "categoria": "plantas", "precio": 500, "stock": 10, "imgUrl": "https://ecoinventos.com/wp-content/uploads/2022/03/tomate-cherry-maceta.jpg" },
+    { "nombre": "Planta de Tomate Chica", "id": 45, "categoria": "plantas", "precio": 500, "stock": 10, "imgUrl": "https://www.gardentech.com/-/media/project/oneweb/gardentech/images/blog/easy-steps-to-grow-your-own-tomatoes/easy_steps-potted_tomato.jpg" },
+    { "nombre": "Maceta Cuadrada", "id": 46, "categoria": "macetas", "precio": 500, "stock": 10, "imgUrl": "https://www.hogarjardin.com.ar/wp-content/uploads/2020/06/Galeria-Clasica-Cuadrada-1-1.jpg" },
+    { "nombre": "Maceta Rectangular", "id": 47, "categoria": "macetas", "precio": 800, "stock": 10, "imgUrl": "https://www.colombraro.com.ar/wp-content/uploads/2409-600x600.jpg" },
+    { "nombre": "Maceta", "id": 48, "categoria": "macetas", "precio": 400, "stock": 10, "imgUrl": "https://d3ugyf2ht6aenh.cloudfront.net/stores/640/817/products/maceta-de-barromesa-de-trabajo-3-1001-b679a13ec720b0d83115960511989982-480-0.jpg" }
 ]
